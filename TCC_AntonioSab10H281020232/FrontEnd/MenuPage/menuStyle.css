@@ -1,0 +1,170 @@
+body{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+#header{
+    background-color: rgb(92, 168, 255);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23% 7% 40% 7% 23%;
+    grid-template-rows: 100px;
+    border-bottom: 1px solid rgb(1, 1, 51);
+
+}
+#header > h1{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+}
+#search > div{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+#search > div > input{
+    width: calc(100% - 50px);
+    padding: 0px;
+    height: 40px;
+    border-width: 0px;
+    padding-left: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+}
+#search > div > img{
+    width: 40px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#account{
+    grid-column: 5/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#account > img{
+    border-radius: 50%;
+    border-color: black;
+    width: 45px;
+    height: 45px;
+}
+#produtosHeader{
+    width: 100%;
+    background-color: rgb(92, 168, 255);
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+}
+#instrumentosBox{
+    height: 40px;
+    
+    display: flex;
+    margin-right: 20px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/3;
+    margin-top: 2px;
+}
+#instrumentosBox > h2{
+    color: rgb(0,0,30);
+}
+#acessoriosBox{
+    height: 40px;
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-column: 4/5;
+    margin-top: 2px;
+}
+#acessoriosBox{
+    color: rgb(0,0,30);
+}
+#outrosBox{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: center;
+    grid-column: 6/7;
+    margin-top: 2px;
+    padding-right: 20px;
+} 
+#outrosBox{
+    color: rgb(0,0,30);
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    rotate: 180deg;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 50ms;
+    animation: fadeIn 50ms;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

@@ -1,0 +1,137 @@
+body{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+#header{
+    background-color: rgb(92, 168, 255);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23% 7% 40% 7% 23%;
+    grid-template-rows: 100px;
+    border-bottom: 2px solid rgb(83, 255, 160);
+
+}
+#header > h1{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+}
+#search > div{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+#search > div > input{
+    width: calc(100% - 50px);
+    padding: 0px;
+    height: 40px;
+    border-width: 0px;
+    padding-left: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+}
+#search > div > img{
+    width: 40px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#account{
+    grid-column: 5/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#account > img{
+    border-radius: 50%;
+    border-color: black;
+    width: 45px;
+    height: 45px;
+}
+#RegisterBox{
+    background-color: rgb(124, 191, 253);
+    border: 1px solid rgb(35, 141, 240);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    width: 450px; 
+    height: 300px;
+}
+form{
+    height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.email{
+    font-size: 13px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(28, 108, 184);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.senha{
+    font-size: 13px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(28, 108, 184);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.textoregister{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: rgb(16, 3, 73);
+}
+button{
+    width: 200px;
+    border-color: rgb(35, 141, 240) ;
+    background-color: rgb(159, 204, 255);
+    height: 37px;
+}
+body{
+    background-color: white;
+    margin: 0px;
+    border: 0px;
+}
+h6{
+    font-family:Arial, Helvetica, sans-serif ;
+    margin-bottom: auto;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: rgb(192, 127, 7);
+}
+.correto{
+    font-family:Arial, Helvetica, sans-serif ;
+    margin-bottom: auto;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: rgb(3, 161, 3);
+}
